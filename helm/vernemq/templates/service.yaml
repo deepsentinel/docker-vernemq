@@ -62,7 +62,7 @@ spec:
     {{- end }}
     {{- if .Values.service.ws.enabled }}
     - port: {{ .Values.service.ws.port }}
-      targetPort: ws
+      targetPort: 8081
       name: ws
       {{- if eq .Values.service.type "NodePort" }}
       nodePort: {{ .Values.service.ws.nodePort }}

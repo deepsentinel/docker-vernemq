@@ -38,9 +38,9 @@ service:
     nodePort: 8883
   ws:
     enabled: false
-    port: 8080
+    port: 8081
     # This is the port used by nodes to expose the service
-    nodePort: 8080
+    nodePort: 8081
   wss:
     enabled: false
     port: 8443
